@@ -22,6 +22,7 @@
     "dayjs": "^1.11.13",
     "dompurify": "^3.2.4",
     "firebase": "^11.4.0",
+    "frontend": "file:",
     "jspdf": "^3.0.1",
     "jspdf-autotable": "^5.0.2",
     "jwt-decode": "^4.0.0",
