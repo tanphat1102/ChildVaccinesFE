@@ -1,0 +1,134 @@
+.floatingButtons {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s;
+  padding-bottom: 60px;
+}
+
+.booking {
+  width: 150%;
+  height: 40px;
+  border-radius: 5px 5px 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2A388F;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  animation: zoomEffect 1.5s infinite alternate;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.booking svg {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.booking span{
+  margin-right: 10px;
+}
+
+.booking::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; 
+  right: -10px;  
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #2A388F;
+  transform: rotate(45deg);
+  filter: brightness(0.99); 
+}
+
+
+.messenger-icon,
+.phone-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: fixed;
+  right: 10px;
+}
+
+.messenger-icon {
+  background-color: #0084ff;
+  color: white;
+  bottom: 90px;
+  animation: shakeEffect 1s infinite alternate;
+}
+
+.phone-icon {
+  background-color: #32a7e2;
+  color: white;
+  bottom: 30px;
+  animation: shakeEffect 1s infinite alternate;
+}
+
+@keyframes shakeEffect {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Hover Effect */
+.messenger-icon:hover,
+.phone-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Nút cuộn lên */
+.scrollToTop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #555;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  bottom: 150px;
+  transition: transform 0.3s;
+  z-index: 5000;
+}
+
+.scrollToTop:hover {
+  transform: scale(1.1);
+}
+

@@ -1,0 +1,108 @@
+.schedule-form-container {
+  width: 100%;
+
+  .schedule-form {
+    &__age-range {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__age-item {
+      flex: 1;
+    }
+
+    &__input-full {
+      width: 100%;
+    }
+
+    &__notes {
+      margin-bottom: 20px;
+    }
+
+    &__divider {
+      margin: 24px 0;
+    }
+
+    &__vaccine-card {
+      margin-bottom: 20px;
+    }
+
+    &__delete-btn {
+      margin-left: 8px;
+    }
+
+    &__vaccine-select {
+      margin-bottom: 16px;
+    }
+
+    &__injection-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    &__dose-number {
+      flex: 0.15;
+
+      .ant-input-number {
+        width: 100px;
+      }
+    }
+
+    &__injection-month {
+      flex: 0.15;
+
+      .ant-input-number {
+        width: 100px;
+      }
+    }
+
+    &__required {
+      flex: 0.15;
+    }
+
+    &__injection-notes {
+      flex: 0.45;
+
+      .ant-input {
+        width: 200px;
+      }
+    }
+
+    &__remove-injection-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    &__add-injection-btn {
+      width: 100%;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    &__add-vaccine-btn {
+      width: 100%;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    &__actions {
+      padding-top: 20px;
+      display: flex;
+      justify-content: flex-end; /* Align content to the right */
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+
+//Cái nầy là cho cái Card để hiển thị thông tin Vaccine trên Hompage
+.cardVaccineContainer img{
+  width: 100%;
+  height: 170px;
+  padding-top: 10px;
+}
+
+.cardVaccineTitle{
+    padding-top: 15px;
+}
+
+//Còn cái này là cho các tên của loại service mà trang web sẽ phục vụ trên homepagehomepage|
+.cardServiceContainer {
+  margin-top: 10px;
+  width: 18.2rem;
+  height: 16rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.contentOverplay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.0004px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardServiceTitle {
+   /* Nền trắng mờ */
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: White;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newsContainer {
+  margin-top: 15px; 
+  padding: 16px;
+  width: 400px;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  text-align: left;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    justify-content: center;
+  }
+
+  .newsTitlte {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 12px;
+  }
+
+  .newsDivider {
+    border: none;
+    height: 2px;
+    background: #ccc;
+    margin: 10px 0;
+  }
+
+  .newsBriefContent {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+}
