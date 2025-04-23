@@ -1,12 +1,10 @@
 import React from "react";
 import { Button, Modal, Avatar } from "antd";
-import {
-  UserOutlined,
-} from "@ant-design/icons";
-import "./adminNavBar.scss";
-import {Link, useNavigate} from "react-router-dom";
+import { UserOutlined } from "@ant-design/icons";
+import "./adminNavbar.scss";
+import { Link, useNavigate } from "react-router-dom";
 import { MdLogin, MdLogout } from "react-icons/md";
-import {IsLoginSuccessFully} from "../../../validations/IsLogginSuccessfully.ts";
+import { IsLoginSuccessFully } from "../../../validations/IsLogginSuccessfully.ts";
 
 interface AdminNavbarProps {
   username: string;
@@ -14,8 +12,7 @@ interface AdminNavbarProps {
 }
 
 const AdminNavbar: React.FC<AdminNavbarProps> = ({ username, avatarUrl }) => {
-
-  const {sub} = IsLoginSuccessFully();
+  const { sub } = IsLoginSuccessFully();
 
   const navigate = useNavigate();
   const handleLogout = () => {
@@ -36,17 +33,14 @@ const AdminNavbar: React.FC<AdminNavbarProps> = ({ username, avatarUrl }) => {
     <div className="wrapedStatusbar">
       <nav>
         <div className="profile">
-          <Avatar
-            src={avatarUrl}
-            icon={<UserOutlined />}
-          />
+          <Avatar src={avatarUrl} icon={<UserOutlined />} />
           <span className="username"> {username}</span>
         </div>
         <Link to="/login">
           {!sub && (
-              <Button type="primary" className="login-btn">
-                <MdLogin size={21} /> Đăng nhập
-              </Button>
+            <Button type="primary" className="login-btn">
+              <MdLogin size={21} /> Đăng nhập
+            </Button>
           )}
         </Link>
 
